@@ -261,7 +261,7 @@ function OnGUI () {
 	
        var e : Event = Event.current;
 		if (e.isKey) {
-			Debug.Log("Detected key code: " + e.keyCode);
+			//Debug.Log("Detected key code: " + e.keyCode);
 			GUI.Label (Rect (10, 10, 400, 20), "Keycode ="+ e.keyCode );
 
 	
