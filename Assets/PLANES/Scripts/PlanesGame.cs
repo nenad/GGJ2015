@@ -3,10 +3,19 @@ using System.Collections;
 
 public class PlanesGame : MonoBehaviour {
 
+    static DiveFPSController dive;
+    public static bool isPlaying = false;
+
+    void Start()
+    {
+        dive = GameObject.FindObjectOfType<DiveFPSController>();
+    }
 
     public static void SetPlanesActive(bool status)
     {
-        var planesUI = GameObject.Find("UI/PlanetGameUI");
+        isPlaying = status;
+        dive.enabled = !status;
+        //var planesUI = GameObject.Find("UI/PlanetGameUI");
 
         var self = GameObject.FindObjectOfType<PlanesGame>();
         foreach (Transform t in self.transform)
@@ -18,7 +27,7 @@ public class PlanesGame : MonoBehaviour {
             var r = GameObject.FindObjectOfType<Reset>();
             r.ResetGame();
         }
-        planesUI.SetActive(status);
+        //planesUI.SetActive(status);
     }
 
     void Update()

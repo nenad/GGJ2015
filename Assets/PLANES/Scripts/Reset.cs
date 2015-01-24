@@ -5,11 +5,13 @@ public class Reset : MonoBehaviour {
 
     Score score;
     Player player;
+    Map map;
 
 	// Use this for initialization
 	void Start () {
         score = GameObject.FindObjectOfType<Score>();
         player = GameObject.FindObjectOfType<Player>();
+        map = GameObject.FindObjectOfType<Map>();
 	}
 
     public void ResetGame()
@@ -29,8 +31,7 @@ public class Reset : MonoBehaviour {
             Destroy(b.gameObject);
         }
 
-        Map m = GameObject.FindObjectOfType<Map>();
-        m.transform.position = new Vector3(0, 12.5f);
+        map.Reset();
 
     }
 

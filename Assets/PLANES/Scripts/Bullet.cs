@@ -34,6 +34,9 @@ public class Bullet : MonoBehaviour {
         }
         if (enemy)
         {
+            if (shooter == null)
+                return;
+
             if (shooter.GetComponent<Enemy>())
             {
                 Physics2D.IgnoreCollision(enemy.collider2D, collider2D);

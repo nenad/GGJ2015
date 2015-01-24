@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 69fdde1c21c035549a087366b7727ab5
+TrueTypeFontImporter:
+  serializedVersion: 2
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames:
+  - AlarmClock
+  customCharacters: 
+  fontRenderingMode: 0
+  userData: 

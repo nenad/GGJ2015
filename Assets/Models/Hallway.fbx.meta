@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 7975d3a16f5802a44b20ffb1ea6df66f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bar
+    100002: BarStool
+    100004: BarStool.001
+    100006: Cube.005
+    100008: Cylinder004
+    100010: H
+    100012: //RootNode
+    100014: Hallway
+    100016: HallwaySTUP!
+    100018: Mirror
+    100020: Plane
+    100022: Poster
+    100024: SeatingArea
+    100026: VendingMaschine1
+    100028: VendingMaschine2
+    100030: WaterFountain
+    400000: Bar
+    400002: BarStool
+    400004: BarStool.001
+    400006: Cube.005
+    400008: Cylinder004
+    400010: H
+    400012: //RootNode
+    400014: Hallway
+    400016: HallwaySTUP!
+    400018: Mirror
+    400020: Plane
+    400022: Poster
+    400024: SeatingArea
+    400026: VendingMaschine1
+    400028: VendingMaschine2
+    400030: WaterFountain
+    2300000: Bar
+    2300002: BarStool
+    2300004: BarStool.001
+    2300006: Cube.005
+    2300008: Cylinder004
+    2300010: H
+    2300012: Hallway
+    2300014: HallwaySTUP!
+    2300016: Mirror
+    2300018: Plane
+    2300020: Poster
+    2300022: SeatingArea
+    2300024: VendingMaschine1
+    2300026: VendingMaschine2
+    2300028: WaterFountain
+    3300000: Bar
+    3300002: BarStool
+    3300004: BarStool.001
+    3300006: Cube.005
+    3300008: Cylinder004
+    3300010: H
+    3300012: Hallway
+    3300014: HallwaySTUP!
+    3300016: Mirror
+    3300018: Plane
+    3300020: Poster
+    3300022: SeatingArea
+    3300024: VendingMaschine1
+    3300026: VendingMaschine2
+    3300028: WaterFountain
+    4300000: BarStool.001
+    4300002: Cylinder004
+    4300006: Mirror
+    4300008: H
+    4300010: WaterFountain
+    4300012: VendingMaschine2
+    4300014: VendingMaschine1
+    4300016: Cube.005
+    4300018: Poster
+    4300020: Plane
+    4300022: SeatingArea
+    4300024: Bar
+    4300026: HallwaySTUP!
+    4300028: Hallway
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

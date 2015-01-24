@@ -226,7 +226,6 @@ if (directionVector != Vector3.zero) {
 	{
 	
 	if (stopmovingup==false){
-		print ("ControllerColliderHit");	
 		velocity.y=0;	
 		stopmovingup=true;
 	}

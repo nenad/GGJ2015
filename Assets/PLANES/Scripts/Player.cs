@@ -57,7 +57,7 @@ public class Player : MonoBehaviour {
     public void ResetPlayer()
     {
         Health = 100;
-        transform.position = new Vector3(0, Y_BOUNDARY);
+        transform.position = startPosition;
     }
 
     private void Die()
