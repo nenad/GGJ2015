@@ -1,35 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RaggedMate : MonoBehaviour {
+public class RaggedMate : MonoBehaviour
+{
 
-    void GetRekt()
+    void GetRekt(Transform t)
     {
-        animation.Stop();
-        gameObject.AddComponent<BoxCollider>();
-        gameObject.AddComponent<Rigidbody>().mass = 0.1f;
-        foreach (Transform t in transform)
+        t.gameObject.AddComponent<BoxCollider>();
+        t.gameObject.AddComponent<Rigidbody>().mass = 0.1f;
+
+        if (t.childCount > 0)
         {
-            if (t.childCount > 0)
+            for (int i = 0; i < t.childCount; i++)
             {
-                for (int i = 0; i < t.childCount; i++)
-                {
-                    t.GetChild(i).gameObject.AddComponent<BoxCollider>();
-                    t.GetChild(i).gameObject.AddComponent<Rigidbody>().mass = 0.1f;
-                }
+                GetRekt(t.GetChild(i));
             }
-            t.gameObject.AddComponent<BoxCollider>();
-            t.gameObject.AddComponent<Rigidbody>().mass = 0.1f;
         }
     }
 
-	// Use this for initialization
-	void Start () {
-        GetRekt();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Use this for initialization
+    void Start()
+    {
+        animation.Stop();
+        GetRekt(transform);
+        Destroy(gameObject, 10f);
+    }
 }

@@ -1,38 +1,56 @@
 fileFormatVersion: 2
-guid: 9895705cc0787b4499e3ad97f372206c
+guid: 23d6e852295f3f84ca04d5342c7f7c93
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Ass
-    100002: Body
-    100004: Head
+    100000: Body
+    100002: Head
+    100004: //RootNode
     100006: LArm
-    100008: RArm
-    100010: //RootNode
-    400000: Ass
-    400002: Body
-    400004: Head
+    100008: LFoot
+    100010: LLeg
+    100012: Pelvis
+    100014: RArm
+    100016: RFoot
+    100018: RLeg
+    400000: Body
+    400002: Head
+    400004: //RootNode
     400006: LArm
-    400008: RArm
-    400010: //RootNode
-    2300000: Ass
-    2300002: Body
-    2300004: Head
-    2300006: LArm
-    2300008: RArm
-    3300000: Ass
-    3300002: Body
-    3300004: Head
-    3300006: LArm
-    3300008: RArm
-    4300000: Ass
+    400008: LFoot
+    400010: LLeg
+    400012: Pelvis
+    400014: RArm
+    400016: RFoot
+    400018: RLeg
+    2300000: Body
+    2300002: Head
+    2300004: LArm
+    2300006: LFoot
+    2300008: LLeg
+    2300010: Pelvis
+    2300012: RArm
+    2300014: RFoot
+    2300016: RLeg
+    3300000: Body
+    3300002: Head
+    3300004: LArm
+    3300006: LFoot
+    3300008: LLeg
+    3300010: Pelvis
+    3300012: RArm
+    3300014: RFoot
+    3300016: RLeg
+    4300000: Pelvis
     4300002: Body
     4300004: RArm
     4300006: LArm
     4300008: Head
-    7400000: SittingIdle
+    4300010: LLeg
+    4300012: LFoot
+    4300014: RLeg
+    4300016: RFoot
     9500000: //RootNode
-    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -48,45 +66,7 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: SittingIdle
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Ass
-        weight: 1
-      - path: Ass/Body
-        weight: 1
-      - path: Ass/Body/Head
-        weight: 1
-      - path: Ass/Body/LArm
-        weight: 1
-      - path: Ass/Body/RArm
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -122,6 +102,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 

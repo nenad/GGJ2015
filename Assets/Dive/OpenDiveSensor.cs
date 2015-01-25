@@ -45,8 +45,7 @@ public class OpenDiveSensor : MonoBehaviour {
 	AndroidJavaObject mConfig;
 	AndroidJavaObject mWindowManager;
 
-
-	private float q0,q1,q2,q3;
+    private float q0,q1,q2,q3;
 	private float m0,m1,m2;
 	Quaternion rot;
 	private bool show_gyro_error_message=false;

@@ -30,7 +30,7 @@ ModelImporter:
     4300004: RArm
     4300006: LArm
     4300008: Head
-    7400000: Take 001
+    7400000: SittingTyping
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -48,7 +48,45 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: SittingTyping
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ass
+        weight: 1
+      - path: Ass/Body
+        weight: 1
+      - path: Ass/Body/Head
+        weight: 1
+      - path: Ass/Body/LArm
+        weight: 1
+      - path: Ass/Body/RArm
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

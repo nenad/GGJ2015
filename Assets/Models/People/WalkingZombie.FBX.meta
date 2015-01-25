@@ -1,36 +1,56 @@
 fileFormatVersion: 2
-guid: 9ecc176d155f52b489bcdf8702a46185
+guid: 4e3b5e78c8bfb2a40a6b13afac788ea8
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Ass
-    100002: Body
-    100004: Head
-    100006: LArm
-    100008: RArm
-    100010: //RootNode
-    400000: Ass
-    400002: Body
-    400004: Head
-    400006: LArm
-    400008: RArm
-    400010: //RootNode
-    2300000: Ass
-    2300002: Body
-    2300004: Head
-    2300006: LArm
-    2300008: RArm
-    3300000: Ass
-    3300002: Body
-    3300004: Head
-    3300006: LArm
-    3300008: RArm
-    4300000: Ass
-    4300002: Body
-    4300004: RArm
-    4300006: LArm
-    4300008: Head
-    7400000: SittingPossesed
+    100000: Body
+    100002: Head
+    100004: LArm
+    100006: LFoot
+    100008: LLeg
+    100010: Pelvis
+    100012: RArm
+    100014: RFoot
+    100016: RLeg
+    100018: //RootNode
+    400000: Body
+    400002: Head
+    400004: LArm
+    400006: LFoot
+    400008: LLeg
+    400010: Pelvis
+    400012: RArm
+    400014: RFoot
+    400016: RLeg
+    400018: //RootNode
+    2300000: Body
+    2300002: Head
+    2300004: LArm
+    2300006: LFoot
+    2300008: LLeg
+    2300010: Pelvis
+    2300012: RArm
+    2300014: RFoot
+    2300016: RLeg
+    3300000: Body
+    3300002: Head
+    3300004: LArm
+    3300006: LFoot
+    3300008: LLeg
+    3300010: Pelvis
+    3300012: RArm
+    3300014: RFoot
+    3300016: RLeg
+    4300000: Pelvis
+    4300002: RLeg
+    4300004: RFoot
+    4300006: LLeg
+    4300008: LFoot
+    4300010: Body
+    4300012: RArm
+    4300014: LArm
+    4300016: Head
+    7400000: ZombieWalk
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -46,14 +66,14 @@ ModelImporter:
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 2
+    animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: SittingPossesed
+      name: ZombieWalk
       takeName: Take 001
       firstFrame: 0
-      lastFrame: 20
+      lastFrame: 12
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
@@ -75,15 +95,23 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: Ass
+      - path: Pelvis
         weight: 1
-      - path: Ass/Body
+      - path: Pelvis/Body
         weight: 1
-      - path: Ass/Body/Head
+      - path: Pelvis/Body/Head
         weight: 1
-      - path: Ass/Body/LArm
+      - path: Pelvis/Body/LArm
         weight: 1
-      - path: Ass/Body/RArm
+      - path: Pelvis/Body/RArm
+        weight: 1
+      - path: Pelvis/LLeg
+        weight: 1
+      - path: Pelvis/LLeg/LFoot
+        weight: 1
+      - path: Pelvis/RLeg
+        weight: 1
+      - path: Pelvis/RLeg/RFoot
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}

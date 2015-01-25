@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 9ecc176d155f52b489bcdf8702a46185
+guid: 9fe073d73c3837f4cb232bc8f8100db3
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: Ass
     100002: Body
-    100004: Head
-    100006: LArm
-    100008: RArm
-    100010: //RootNode
+    100004: //RootNode
+    100006: Head
+    100008: LArm
+    100010: RArm
     400000: Ass
     400002: Body
-    400004: Head
-    400006: LArm
-    400008: RArm
-    400010: //RootNode
+    400004: //RootNode
+    400006: Head
+    400008: LArm
+    400010: RArm
     2300000: Ass
     2300002: Body
     2300004: Head
@@ -30,9 +30,7 @@ ModelImporter:
     4300004: RArm
     4300006: LArm
     4300008: Head
-    7400000: SittingPossesed
     9500000: //RootNode
-    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -46,47 +44,9 @@ ModelImporter:
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
-    animationWrapMode: 2
+    animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: SittingPossesed
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 20
-      wrapMode: 2
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Ass
-        weight: 1
-      - path: Ass/Body
-        weight: 1
-      - path: Ass/Body/Head
-        weight: 1
-      - path: Ass/Body/LArm
-        weight: 1
-      - path: Ass/Body/RArm
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -122,6 +82,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 

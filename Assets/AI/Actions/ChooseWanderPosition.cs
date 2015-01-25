@@ -51,7 +51,6 @@ public class ChooseWanderPosition : RAINAction
 
         Vector3 tDirection = new Vector3(UnityEngine.Random.Range(-1f, 1f), 0f, UnityEngine.Random.Range(-1f, 1f));
         tDirection *= tWanderDistance;
-
         Vector3 tDestination = ai.Kinematic.Position + tDirection;
         if (StayOnGraph.IsValid && (StayOnGraph.Evaluate<bool>(ai.DeltaTime, ai.WorkingMemory)))
         {
