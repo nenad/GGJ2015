@@ -4,6 +4,8 @@ using System.Collections;
 public class EnemyConductor : MonoBehaviour {
     public GameObject DeathObj;
     public AudioClip SplatterSound;
+    public Animation anim;
+    public AudioClip shopraime;
     public float health = 100f;
 
 	// Use this for initialization
