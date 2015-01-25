@@ -24,6 +24,7 @@ public class LevelState : MonoBehaviour {
     IEnumerator DelayedLoad()
     {
         yield return new WaitForSeconds(15f);
-        Application.LoadLevel(Application.loadedLevel + 1);
+        AutoLevelSwitch.switchTime = 0.1f;
+        Application.LoadLevel("BSOD");
     }
 }
