@@ -41,7 +41,6 @@ public class Baseball : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
-        audioManager.Play(thudClip, transform.position);
         if (c.collider.gameObject.layer != LayerMask.NameToLayer("Peasants"))
         {
             return;
@@ -49,6 +48,7 @@ public class Baseball : MonoBehaviour {
         enemyCollider = c.collider;
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("BaseballSwing") && !hasBonked)
         {
+            audioManager.Play(thudClip, transform.position, 0.3f);
             Bonk();
         }
     }

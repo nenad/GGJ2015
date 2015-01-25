@@ -21,14 +21,14 @@ public class KontrolorMoveCompleted : RAINAction
         enemyConductor = ai.Body.GetComponent<EnemyConductor>();
         
         enemyConductor.anim.Stop();
-        if (!isAudioPlaying) {
-            
+        if (!isAudioPlaying && waitTime > 15f)
+        {
             enemyConductor.audio.clip = enemyConductor.shopraime;
             enemyConductor.audio.loop = false;
             enemyConductor.audio.Play();
             isAudioPlaying = true;
         }
-        else if (waitTime > 5f)
+        else if (waitTime > 25f)
         {
             Application.LoadLevel(Application.loadedLevel + 1);
             return ActionResult.SUCCESS;
