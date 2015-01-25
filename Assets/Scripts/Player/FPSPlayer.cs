@@ -28,7 +28,12 @@ public class FPSPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (PlanesGame.isPlaying)
+        {
+            handImage1.enabled = false;
+            handImage2.enabled = false;
+            return;
+        }
         //Debug.DrawLine(transform.position, transform.forward * 4f, Color.red, 0.2f);
         
         var hits = Physics.RaycastAll(transform.position, transform.forward, 2f);
