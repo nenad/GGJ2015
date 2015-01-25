@@ -19,7 +19,7 @@ public class Zombie : MonoBehaviour
         while (true)
         {
             AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], transform.position);
-            yield return new WaitForSeconds(Random.Range(3f, 6f));
+            yield return new WaitForSeconds(Random.Range(4f, 9f));
         }
     }
 

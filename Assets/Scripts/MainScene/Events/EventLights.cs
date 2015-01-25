@@ -4,18 +4,28 @@ using System.Collections;
 public class EventLights : MonoBehaviour {
 
     Light[] lights;
-    public int startRandom;
-    public int endRandom;
+    public float seconds;
     public Color flashingColor;
     bool inProgress = false;
 	// Use this for initialization
 	void Start () {
         lights = GameObject.FindObjectsOfType<Light>();
-        TrippyLights();
 	}
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            TrippyLights();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SwitchLights(true);
+        }
+    }
 
-    void TrippyLights()
+
+    public void TrippyLights()
     {
         if (!inProgress)
         {
@@ -27,12 +37,14 @@ public class EventLights : MonoBehaviour {
 
     IEnumerator IETrippyLights()
     {
-        int times = Random.Range(startRandom, endRandom);
+        float toChop = seconds;
 
-        for (int i = 0; i < times; i++)
+        while(toChop > 0)
         {
             SwitchLights();
-            yield return new WaitForSeconds(Random.Range(0.1f, 0.6f));
+            var random = Random.Range(0.1f, 0.3f);
+            yield return new WaitForSeconds(random);
+            toChop -= random;
         }
         yield return new WaitForSeconds(1f);
         SwitchLights(true);
@@ -40,7 +52,7 @@ public class EventLights : MonoBehaviour {
         inProgress = false;
     }
 
-    void ColorLights(Color color)
+    public void ColorLights(Color color)
     {
         foreach (Light l in lights)
         {
@@ -48,16 +60,17 @@ public class EventLights : MonoBehaviour {
         }
     }
 
-    void SwitchLights(bool status)
+    public void SwitchLights(bool status)
     {
 
         foreach (Light l in lights)
         {
             l.enabled = status;
         }
+        inProgress = !status;
     }
 
-    void SwitchLights()
+    public void SwitchLights()
     {
         foreach (Light l in lights)
         {

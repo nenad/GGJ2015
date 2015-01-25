@@ -5,10 +5,14 @@ public class PlanesGame : MonoBehaviour {
 
     static DiveFPSController dive;
     public static bool isPlaying = false;
+    public AudioClip newGame;
+    public AudioClip gameOver;
+    public AudioClip shoot;
 
     void Start()
     {
         dive = GameObject.FindObjectOfType<DiveFPSController>();
+        AudioSource.PlayClipAtPoint(newGame, Camera.main.transform.position);
     }
 
     public static void SetPlanesActive(bool status)
@@ -32,14 +36,7 @@ public class PlanesGame : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            SetPlanesActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            SetPlanesActive(false);
-        }
+
     }
 
 }

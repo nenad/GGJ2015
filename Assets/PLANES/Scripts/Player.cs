@@ -10,12 +10,16 @@ public class Player : MonoBehaviour {
     public int Health;
     private Vector3 startPosition;
     Transform planetgame;
+    public GameObject gameover;
+    private PlanesGame game;
 
 	// Use this for initialization
 	void Start () {
+        game = GameObject.FindObjectOfType<PlanesGame>();
         startPosition = transform.position;
         Y_BOUNDARY = startPosition.y;
         planetgame = GameObject.FindObjectOfType<PlanesGame>().transform;
+        gameover.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -46,6 +50,7 @@ public class Player : MonoBehaviour {
             b.shooter = gameObject;
             b.direction = Vector3.up;
             b.origin = transform.position;
+            AudioSource.PlayClipAtPoint(game.shoot, Camera.main.transform.position);
         }
 
         if (Health <= 0)
@@ -56,6 +61,7 @@ public class Player : MonoBehaviour {
 
     public void ResetPlayer()
     {
+        gameover.SetActive(false);
         Health = 100;
         transform.position = startPosition;
     }
@@ -64,6 +70,22 @@ public class Player : MonoBehaviour {
     {
         Reset r = GameObject.FindObjectOfType<Reset>();
         r.ResetGame();
+        StartCoroutine(IEGameOver());
+    }
+
+    IEnumerator IEGameOver()
+    {
+        DrawGameOver();
+        yield return null;
+        PlanesGame.SetPlanesActive(false);
+        AudioSource.PlayClipAtPoint(game.gameOver, Camera.main.transform.position);
+
+    }
+
+    private void DrawGameOver()
+    {
+        gameover.SetActive(true);
+        
     }
 
 }

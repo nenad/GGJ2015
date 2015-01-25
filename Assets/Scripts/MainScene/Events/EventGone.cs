@@ -3,8 +3,7 @@ using System.Collections;
 
 public class EventGone : MonoBehaviour
 {
-
-
+    public static bool isDone = false;
     Person[] people;
 
     void Start()
@@ -12,24 +11,13 @@ public class EventGone : MonoBehaviour
         people = GameObject.FindObjectsOfType<Person>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            TogglePeople(true);
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            TogglePeople(false);
-        }
-    }
-
     public void TogglePeople(bool status)
     {
         foreach (Person p in people)
         {
-            p.gameObject.SetActive(status);
+            Destroy(p.gameObject);
         }
+        isDone = true;
     }
 
 

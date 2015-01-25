@@ -5,20 +5,30 @@ public class Conducter : MonoBehaviour {
 
     public AudioClip[] sounds;
     static DiveFPSController dive;
+    public float pitch;
+    private AudioSource audioSource;
 
     void Start()
     {
         dive = GameObject.FindObjectOfType<DiveFPSController>();
-        StartCoroutine(IERandomSounds());
+        if (sounds.Length > 0)
+        {
+            StartCoroutine(IERandomSounds());
+        }
 
     }
 
     private IEnumerator IERandomSounds()
     {
         yield return new WaitForSeconds(Random.Range(0f, 3f));
+        if (sounds.Length == 0)
+            yield break;
+
         while (true)
         {
-            AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], transform.position);
+            audioSource.clip = sounds[Random.Range(0, sounds.Length)];
+            audioSource.Play();
+            //AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], transform.position);
             yield return new WaitForSeconds(Random.Range(3f, 6f));
         }
     }

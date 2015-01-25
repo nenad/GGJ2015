@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: c2556f67bee50b64394258281a927fc5
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bar
+    100002: Cube
+    100004: Curtain1
+    100006: Curtain2
+    100008: Curtain3
+    100010: Door1
+    100012: Hallway
+    100014: HallwaySTUP
+    100016: HallwaySTUP.001
+    100018: Hangers
+    100020: Mirror
+    100022: Plane
+    100024: Plane.001
+    100026: Plane.002
+    100028: Plane.003
+    100030: Plane.004
+    100032: Plane.005
+    100034: RoomSTUB
+    100036: //RootNode
+    100038: SeatingArea
+    100040: Stalls
+    100042: WC
+    100044: WCDoorMen
+    100046: WCDoorWomen
+    100048: WhiteBoard1
+    100050: WhiteBoard2
+    100052: WhiteBoard3
+    100054: zzylinder001
+    400000: Bar
+    400002: Cube
+    400004: Curtain1
+    400006: Curtain2
+    400008: Curtain3
+    400010: Door1
+    400012: Hallway
+    400014: HallwaySTUP
+    400016: HallwaySTUP.001
+    400018: Hangers
+    400020: Mirror
+    400022: Plane
+    400024: Plane.001
+    400026: Plane.002
+    400028: Plane.003
+    400030: Plane.004
+    400032: Plane.005
+    400034: RoomSTUB
+    400036: //RootNode
+    400038: SeatingArea
+    400040: Stalls
+    400042: WC
+    400044: WCDoorMen
+    400046: WCDoorWomen
+    400048: WhiteBoard1
+    400050: WhiteBoard2
+    400052: WhiteBoard3
+    400054: zzylinder001
+    2300000: Bar
+    2300002: Cube
+    2300004: Curtain1
+    2300006: Curtain2
+    2300008: Curtain3
+    2300010: Door1
+    2300012: Hallway
+    2300014: HallwaySTUP
+    2300016: HallwaySTUP.001
+    2300018: Hangers
+    2300020: Mirror
+    2300022: Plane
+    2300024: Plane.001
+    2300026: Plane.002
+    2300028: Plane.003
+    2300030: Plane.004
+    2300032: Plane.005
+    2300034: RoomSTUB
+    2300036: SeatingArea
+    2300038: Stalls
+    2300040: WC
+    2300042: WCDoorMen
+    2300044: WCDoorWomen
+    2300046: WhiteBoard1
+    2300048: WhiteBoard2
+    2300050: WhiteBoard3
+    2300052: zzylinder001
+    3300000: Bar
+    3300002: Cube
+    3300004: Curtain1
+    3300006: Curtain2
+    3300008: Curtain3
+    3300010: Door1
+    3300012: Hallway
+    3300014: HallwaySTUP
+    3300016: HallwaySTUP.001
+    3300018: Hangers
+    3300020: Mirror
+    3300022: Plane
+    3300024: Plane.001
+    3300026: Plane.002
+    3300028: Plane.003
+    3300030: Plane.004
+    3300032: Plane.005
+    3300034: RoomSTUB
+    3300036: SeatingArea
+    3300038: Stalls
+    3300040: WC
+    3300042: WCDoorMen
+    3300044: WCDoorWomen
+    3300046: WhiteBoard1
+    3300048: WhiteBoard2
+    3300050: WhiteBoard3
+    3300052: zzylinder001
+    4300000: Plane.005
+    4300002: Plane.004
+    4300004: Plane.003
+    4300006: Plane.002
+    4300008: Cube
+    4300010: Plane.001
+    4300012: Plane
+    4300014: HallwaySTUP.001
+    4300016: Curtain1
+    4300018: WhiteBoard1
+    4300020: RoomSTUB
+    4300022: Curtain3
+    4300024: zzylinder001
+    4300026: Curtain2
+    4300028: WhiteBoard2
+    4300030: WhiteBoard3
+    4300032: Hangers
+    4300034: WCDoorWomen
+    4300036: WCDoorMen
+    4300038: Door1
+    4300040: Stalls
+    4300042: WC
+    4300044: Mirror
+    4300046: SeatingArea
+    4300048: Bar
+    4300050: HallwaySTUP
+    4300052: Hallway
+    7400000: Plane.005|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400002: Plane.005|LeftHandShort|Take 001|BaseLayer
+    7400004: Plane.005|LeftHandShort|Take 001|BaseLayer.001
+    7400006: Plane.005|LeftHandShort|Take 001|BaseLayer.002
+    7400008: Plane.005|LeftHandShort|Take 001|BaseLayer.003
+    7400010: Plane.005|LeftHandShort|Take 001|BaseLayer.004
+    7400012: Plane.004|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400014: Plane.004|LeftHandShort|Take 001|BaseLayer
+    7400016: Plane.004|LeftHandShort|Take 001|BaseLayer.001
+    7400018: Plane.004|LeftHandShort|Take 001|BaseLayer.002
+    7400020: Plane.004|LeftHandShort|Take 001|BaseLayer.003
+    7400022: Plane.004|LeftHandShort|Take 001|BaseLayer.004
+    7400024: Plane.003|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400026: Plane.003|LeftHandShort|Take 001|BaseLayer
+    7400028: Plane.003|LeftHandShort|Take 001|BaseLayer.001
+    7400030: Plane.003|LeftHandShort|Take 001|BaseLayer.002
+    7400032: Plane.003|LeftHandShort|Take 001|BaseLayer.003
+    7400034: Plane.003|LeftHandShort|Take 001|BaseLayer.004
+    7400036: Plane.002|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400038: Plane.002|LeftHandShort|Take 001|BaseLayer
+    7400040: Plane.002|LeftHandShort|Take 001|BaseLayer.001
+    7400042: Plane.002|LeftHandShort|Take 001|BaseLayer.002
+    7400044: Plane.002|LeftHandShort|Take 001|BaseLayer.003
+    7400046: Plane.002|LeftHandShort|Take 001|BaseLayer.004
+    7400048: Cube|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400050: Cube|LeftHandShort|Take 001|BaseLayer
+    7400052: Cube|LeftHandShort|Take 001|BaseLayer.001
+    7400054: Cube|LeftHandShort|Take 001|BaseLayer.002
+    7400056: Cube|LeftHandShort|Take 001|BaseLayer.003
+    7400058: Cube|LeftHandShort|Take 001|BaseLayer.004
+    7400060: Plane.001|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400062: Plane.001|LeftHandShort|Take 001|BaseLayer
+    7400064: Plane.001|LeftHandShort|Take 001|BaseLayer.001
+    7400066: Plane.001|LeftHandShort|Take 001|BaseLayer.002
+    7400068: Plane.001|LeftHandShort|Take 001|BaseLayer.003
+    7400070: Plane.001|LeftHandShort|Take 001|BaseLayer.004
+    7400072: Plane|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400074: Plane|LeftHandShort|Take 001|BaseLayer
+    7400076: Plane|LeftHandShort|Take 001|BaseLayer.001
+    7400078: Plane|LeftHandShort|Take 001|BaseLayer.002
+    7400080: Plane|LeftHandShort|Take 001|BaseLayer.003
+    7400082: Plane|LeftHandShort|Take 001|BaseLayer.004
+    7400084: HallwaySTUP.001|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400086: HallwaySTUP.001|LeftHandShort|Take 001|BaseLayer
+    7400088: HallwaySTUP.001|LeftHandShort|Take 001|BaseLayer.001
+    7400090: HallwaySTUP.001|LeftHandShort|Take 001|BaseLayer.002
+    7400092: HallwaySTUP.001|LeftHandShort|Take 001|BaseLayer.003
+    7400094: HallwaySTUP.001|LeftHandShort|Take 001|BaseLayer.004
+    7400096: Curtain1|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400098: Curtain1|LeftHandShort|Take 001|BaseLayer
+    7400100: Curtain1|LeftHandShort|Take 001|BaseLayer.001
+    7400102: Curtain1|LeftHandShort|Take 001|BaseLayer.002
+    7400104: Curtain1|LeftHandShort|Take 001|BaseLayer.003
+    7400106: Curtain1|LeftHandShort|Take 001|BaseLayer.004
+    7400108: WhiteBoard1|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400110: WhiteBoard1|LeftHandShort|Take 001|BaseLayer
+    7400112: WhiteBoard1|LeftHandShort|Take 001|BaseLayer.001
+    7400114: WhiteBoard1|LeftHandShort|Take 001|BaseLayer.002
+    7400116: WhiteBoard1|LeftHandShort|Take 001|BaseLayer.003
+    7400118: WhiteBoard1|LeftHandShort|Take 001|BaseLayer.004
+    7400120: RoomSTUB|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400122: RoomSTUB|LeftHandShort|Take 001|BaseLayer
+    7400124: RoomSTUB|LeftHandShort|Take 001|BaseLayer.001
+    7400126: RoomSTUB|LeftHandShort|Take 001|BaseLayer.002
+    7400128: RoomSTUB|LeftHandShort|Take 001|BaseLayer.003
+    7400130: RoomSTUB|LeftHandShort|Take 001|BaseLayer.004
+    7400132: Curtain3|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400134: Curtain3|LeftHandShort|Take 001|BaseLayer
+    7400136: Curtain3|LeftHandShort|Take 001|BaseLayer.001
+    7400138: Curtain3|LeftHandShort|Take 001|BaseLayer.002
+    7400140: Curtain3|LeftHandShort|Take 001|BaseLayer.003
+    7400142: Curtain3|LeftHandShort|Take 001|BaseLayer.004
+    7400144: zzylinder001|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400146: zzylinder001|LeftHandShort|Take 001|BaseLayer
+    7400148: zzylinder001|LeftHandShort|Take 001|BaseLayer.001
+    7400150: zzylinder001|LeftHandShort|Take 001|BaseLayer.002
+    7400152: zzylinder001|LeftHandShort|Take 001|BaseLayer.003
+    7400154: zzylinder001|LeftHandShort|Take 001|BaseLayer.004
+    7400156: Curtain2|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400158: Curtain2|LeftHandShort|Take 001|BaseLayer
+    7400160: Curtain2|LeftHandShort|Take 001|BaseLayer.001
+    7400162: Curtain2|LeftHandShort|Take 001|BaseLayer.002
+    7400164: Curtain2|LeftHandShort|Take 001|BaseLayer.003
+    7400166: Curtain2|LeftHandShort|Take 001|BaseLayer.004
+    7400168: WhiteBoard2|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400170: WhiteBoard2|LeftHandShort|Take 001|BaseLayer
+    7400172: WhiteBoard2|LeftHandShort|Take 001|BaseLayer.001
+    7400174: WhiteBoard2|LeftHandShort|Take 001|BaseLayer.002
+    7400176: WhiteBoard2|LeftHandShort|Take 001|BaseLayer.003
+    7400178: WhiteBoard2|LeftHandShort|Take 001|BaseLayer.004
+    7400180: WhiteBoard3|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400182: WhiteBoard3|LeftHandShort|Take 001|BaseLayer
+    7400184: WhiteBoard3|LeftHandShort|Take 001|BaseLayer.001
+    7400186: WhiteBoard3|LeftHandShort|Take 001|BaseLayer.002
+    7400188: WhiteBoard3|LeftHandShort|Take 001|BaseLayer.003
+    7400190: WhiteBoard3|LeftHandShort|Take 001|BaseLayer.004
+    7400192: Hangers|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400194: Hangers|LeftHandShort|Take 001|BaseLayer
+    7400196: Hangers|LeftHandShort|Take 001|BaseLayer.001
+    7400198: Hangers|LeftHandShort|Take 001|BaseLayer.002
+    7400200: Hangers|LeftHandShort|Take 001|BaseLayer.003
+    7400202: Hangers|LeftHandShort|Take 001|BaseLayer.004
+    7400204: WCDoorWomen|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400206: WCDoorWomen|LeftHandShort|Take 001|BaseLayer
+    7400208: WCDoorWomen|LeftHandShort|Take 001|BaseLayer.001
+    7400210: WCDoorWomen|LeftHandShort|Take 001|BaseLayer.002
+    7400212: WCDoorWomen|LeftHandShort|Take 001|BaseLayer.003
+    7400214: WCDoorWomen|LeftHandShort|Take 001|BaseLayer.004
+    7400216: WCDoorMen|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400218: WCDoorMen|LeftHandShort|Take 001|BaseLayer
+    7400220: WCDoorMen|LeftHandShort|Take 001|BaseLayer.001
+    7400222: WCDoorMen|LeftHandShort|Take 001|BaseLayer.002
+    7400224: WCDoorMen|LeftHandShort|Take 001|BaseLayer.003
+    7400226: WCDoorMen|LeftHandShort|Take 001|BaseLayer.004
+    7400228: Door1|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400230: Door1|LeftHandShort|Take 001|BaseLayer
+    7400232: Door1|LeftHandShort|Take 001|BaseLayer.001
+    7400234: Door1|LeftHandShort|Take 001|BaseLayer.002
+    7400236: Door1|LeftHandShort|Take 001|BaseLayer.003
+    7400238: Door1|LeftHandShort|Take 001|BaseLayer.004
+    7400240: Stalls|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400242: Stalls|LeftHandShort|Take 001|BaseLayer
+    7400244: Stalls|LeftHandShort|Take 001|BaseLayer.001
+    7400246: Stalls|LeftHandShort|Take 001|BaseLayer.002
+    7400248: Stalls|LeftHandShort|Take 001|BaseLayer.003
+    7400250: Stalls|LeftHandShort|Take 001|BaseLayer.004
+    7400252: WC|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400254: WC|LeftHandShort|Take 001|BaseLayer
+    7400256: WC|LeftHandShort|Take 001|BaseLayer.001
+    7400258: WC|LeftHandShort|Take 001|BaseLayer.002
+    7400260: WC|LeftHandShort|Take 001|BaseLayer.003
+    7400262: WC|LeftHandShort|Take 001|BaseLayer.004
+    7400264: Mirror|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400266: Mirror|LeftHandShort|Take 001|BaseLayer
+    7400268: Mirror|LeftHandShort|Take 001|BaseLayer.001
+    7400270: Mirror|LeftHandShort|Take 001|BaseLayer.002
+    7400272: Mirror|LeftHandShort|Take 001|BaseLayer.003
+    7400274: Mirror|LeftHandShort|Take 001|BaseLayer.004
+    7400276: SeatingArea|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400278: SeatingArea|LeftHandShort|Take 001|BaseLayer
+    7400280: SeatingArea|LeftHandShort|Take 001|BaseLayer.001
+    7400282: SeatingArea|LeftHandShort|Take 001|BaseLayer.002
+    7400284: SeatingArea|LeftHandShort|Take 001|BaseLayer.003
+    7400286: SeatingArea|LeftHandShort|Take 001|BaseLayer.004
+    7400288: Bar|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400290: Bar|LeftHandShort|Take 001|BaseLayer
+    7400292: Bar|LeftHandShort|Take 001|BaseLayer.001
+    7400294: Bar|LeftHandShort|Take 001|BaseLayer.002
+    7400296: Bar|LeftHandShort|Take 001|BaseLayer.003
+    7400298: Bar|LeftHandShort|Take 001|BaseLayer.004
+    7400300: HallwaySTUP|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400302: HallwaySTUP|LeftHandShort|Take 001|BaseLayer
+    7400304: HallwaySTUP|LeftHandShort|Take 001|BaseLayer.001
+    7400306: HallwaySTUP|LeftHandShort|Take 001|BaseLayer.002
+    7400308: HallwaySTUP|LeftHandShort|Take 001|BaseLayer.003
+    7400310: HallwaySTUP|LeftHandShort|Take 001|BaseLayer.004
+    7400312: Hallway|Cube.009|Cube|CubeAction|Cube|CubeAction
+    7400314: Hallway|LeftHandShort|Take 001|BaseLayer
+    7400316: Hallway|LeftHandShort|Take 001|BaseLayer.001
+    7400318: Hallway|LeftHandShort|Take 001|BaseLayer.002
+    7400320: Hallway|LeftHandShort|Take 001|BaseLayer.003
+    7400322: Hallway|LeftHandShort|Take 001|BaseLayer.004
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
