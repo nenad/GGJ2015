@@ -30,7 +30,7 @@ public class KontrolorMoveCompleted : RAINAction
         }
         else if (waitTime > 25f)
         {
-            AutoLevelSwitch.switchTime = -1f;
+            AutoLevelState.switchTime = -1f;
             Application.LoadLevel("BSOD");
             return ActionResult.SUCCESS;
         }

@@ -21,15 +21,15 @@ public class Conducter : MonoBehaviour {
     private IEnumerator IERandomSounds()
     {
         yield return new WaitForSeconds(Random.Range(0f, 3f));
-        if (sounds.Length == 0)
-            yield break;
-
-        while (true)
+        if (sounds.Length > 0)
         {
-            audioSource.clip = sounds[Random.Range(0, sounds.Length)];
-            audioSource.Play();
-            //AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], transform.position);
-            yield return new WaitForSeconds(Random.Range(3f, 6f));
+            while (true)
+            {
+                audioSource.clip = sounds[Random.Range(0, sounds.Length)];
+                audioSource.Play();
+                //AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], transform.position);
+                yield return new WaitForSeconds(Random.Range(3f, 6f));
+            }
         }
     }
 

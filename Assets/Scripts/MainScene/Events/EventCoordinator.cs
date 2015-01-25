@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EventCoordinator : MonoBehaviour {
+public class EventCoordinator : MonoBehaviour
+{
 
     public EventZombies zombies;
     public EventConductors conductors;
@@ -19,10 +20,11 @@ public class EventCoordinator : MonoBehaviour {
     private float current = 0;
     private float max = 1;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         //renderer = plane.renderer;
-	}
+    }
 
     public void StartJurassicPark()
     {
@@ -38,6 +40,8 @@ public class EventCoordinator : MonoBehaviour {
         PlayIntenseMusic();
         yield return new WaitForSeconds(10);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         PossesedPeople();
         yield return new WaitForSeconds(10);
         yield return null;
@@ -45,8 +49,10 @@ public class EventCoordinator : MonoBehaviour {
 
         SetNormalAtmosphere();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         RagdolPeople();
         yield return new WaitForSeconds(10);
         yield return null;
@@ -54,8 +60,10 @@ public class EventCoordinator : MonoBehaviour {
 
         SetNormalAtmosphere();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         SetUpConductors();
         yield return new WaitForSeconds(15);
         yield return null;
@@ -63,22 +71,39 @@ public class EventCoordinator : MonoBehaviour {
 
         SetNormalAtmosphere();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         SetUpZombies();
         trippy.seconds = 15;
         trippy.TrippyLights();
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(21);
         yield return null;
         ClearZombies();
         SetNormalAtmosphere();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         yield return null;
         InFrontOfTimer();
         yield return new WaitForSeconds(10);
         yield return null;
         ShowBluescreen();
+    }
+
+    private IEnumerator FadeOutIn()
+    {
+        while (plane.renderer.material.color.a < 1)
+        {
+            plane.renderer.material.color = new Color(0, 0, 0, plane.renderer.material.color.a + Time.deltaTime);
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.5f);
+        while (plane.renderer.material.color.a > 0)
+        {
+            plane.renderer.material.color = new Color(0, 0, 0, plane.renderer.material.color.a - Time.deltaTime);
+            yield return null;
+        }
     }
 
     #region 1
@@ -151,12 +176,12 @@ public class EventCoordinator : MonoBehaviour {
         }
          */
 
-        
+
     }
 
     void PlayIntenseMusic()
     {
-        AudioSource.PlayClipAtPoint(scaryMusic, Camera.main.transform.position);   
+        AudioSource.PlayClipAtPoint(scaryMusic, Camera.main.transform.position);
     }
 
 
@@ -176,7 +201,9 @@ public class EventCoordinator : MonoBehaviour {
 
     private void ShowBluescreen()
     {
-        Debug.Log("Bluescreen");
+        AutoLevelState.switchTime = 3f;
+        AutoLevelState.LevelName = "Massacre";
+        Application.LoadLevel("BSOD");
     }
 
     private void SetNormalAtmosphere()
@@ -184,6 +211,6 @@ public class EventCoordinator : MonoBehaviour {
         IsInPanicMode = false;
     }
 
-	
+
 
 }

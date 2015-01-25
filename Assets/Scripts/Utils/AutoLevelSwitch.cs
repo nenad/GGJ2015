@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AutoLevelSwitch : MonoBehaviour {
-
+public class AutoLevelState
+{
     public static float switchTime = -1;
+    public static string LevelName;
+}
+
+public class AutoLevelSwitch : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (switchTime < 0)
+        if (AutoLevelState.switchTime < 0)
         {
             this.enabled = false;
         }
@@ -15,9 +19,13 @@ public class AutoLevelSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.timeSinceLevelLoad > switchTime)
+        if (Time.timeSinceLevelLoad > AutoLevelState.switchTime)
         {
-            Application.LoadLevel(Application.loadedLevel + 1);
+            Debug.Log("Levelname: " + AutoLevelState.LevelName);
+            if (AutoLevelState.LevelName == null || AutoLevelState.LevelName == string.Empty)
+                Application.LoadLevel(Application.loadedLevel + 1);
+            else
+                Application.LoadLevel(AutoLevelState.LevelName);
         }
 	}
 }

@@ -36,7 +36,13 @@ public class PlanesGame : MonoBehaviour {
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            AutoLevelState.LevelName = "Massacre";
+            AutoLevelState.switchTime = 2f;
+            Application.LoadLevel("BSOD");
 
+        }
     }
 
 }
