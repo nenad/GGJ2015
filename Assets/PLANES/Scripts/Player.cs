@@ -50,7 +50,7 @@ public class Player : MonoBehaviour {
             b.shooter = gameObject;
             b.direction = Vector3.up;
             b.origin = transform.position;
-            AudioSource.PlayClipAtPoint(game.shoot, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(game.shoot, Camera.main.transform.position, 0.3f);
         }
 
         if (Health <= 0)

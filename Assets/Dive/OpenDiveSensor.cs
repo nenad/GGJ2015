@@ -42,8 +42,10 @@ public class OpenDiveSensor : MonoBehaviour {
 	private float time_since_last_fullscreen=0;
 	private int is_tablet;
 
+#if UNITY_ANDROID
 	AndroidJavaObject mConfig;
 	AndroidJavaObject mWindowManager;
+#endif
 
     private float q0,q1,q2,q3;
 	private float m0,m1,m2;
@@ -53,8 +55,8 @@ public class OpenDiveSensor : MonoBehaviour {
 	string errormessage;
 
 
-#if UNITY_EDITOR
-	private float sensitivityX = 15F;
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+    private float sensitivityX = 15F;
 	private float sensitivityY = 15F;
 	
 	private float minimumX = -360F;
@@ -143,9 +145,9 @@ public class OpenDiveSensor : MonoBehaviour {
 
 
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
 
-		if (rigidbody)
+        if (rigidbody)
 			rigidbody.freezeRotation = true;
 
   #elif UNITY_ANDROID
@@ -222,16 +224,16 @@ public class OpenDiveSensor : MonoBehaviour {
 	
 	void Update () {
 		aspectRatio=(Screen.height*2.0f)/Screen.width;
-		setIPDCorrection(IPDCorrection); 
+		setIPDCorrection(IPDCorrection);
 
-		//Debug.Log ("Divecamera"+cameraleft.aspect+"1/asp "+1/cameraleft.aspect+" Screen Width/Height "+ aspectRatio);
-
-
+        //Debug.Log ("Divecamera"+cameraleft.aspect+"1/asp "+1/cameraleft.aspect+" Screen Width/Height "+ aspectRatio);
 
 
-#if UNITY_EDITOR
 
-	#elif UNITY_ANDROID
+
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+
+#elif UNITY_ANDROID
 		time_since_last_fullscreen+=Time.deltaTime;
 		
 		if (time_since_last_fullscreen >8){
@@ -259,7 +261,7 @@ public class OpenDiveSensor : MonoBehaviour {
 
 
 
-	#elif UNITY_IPHONE
+#elif UNITY_IPHONE
 		DiveUpdateGyroData();
 		get_q(ref q0,ref q1,ref q2,ref q3);
 		rot.x=-q2;
@@ -284,13 +286,13 @@ public class OpenDiveSensor : MonoBehaviour {
 #endif
 
 
-	
 
 
-#if UNITY_EDITOR
 
-		if (emulateMouseInEditor){
-			
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+
+        if (emulateMouseInEditor){
+            Screen.showCursor = false;
 
 			if (axes == RotationAxes.MouseXAndY)
 			{
@@ -360,9 +362,11 @@ public class OpenDiveSensor : MonoBehaviour {
 
 		// not using camera nearclipplane value because that leads to problems with field of view in different projects
 
-
-		cameraleft.projectionMatrix = PerspectiveOffCenter((-zoom+correction)*(znear/0.1f), (zoom+correction)*(znear/0.1f), -zoom*(znear/0.1f)*aspectRatio, zoom*(znear/0.1f)*aspectRatio, znear, zfar);;
-		cameraright.projectionMatrix = PerspectiveOffCenter((-zoom-correction)*(znear/0.1f), (zoom-correction)*(znear/0.1f), -zoom*(znear/0.1f)*aspectRatio, zoom*(znear/0.1f)*aspectRatio, znear, zfar);;
+        if (cameraright != null && cameraright.active)
+        {
+            cameraleft.projectionMatrix = PerspectiveOffCenter((-zoom + correction) * (znear / 0.1f), (zoom + correction) * (znear / 0.1f), -zoom * (znear / 0.1f) * aspectRatio, zoom * (znear / 0.1f) * aspectRatio, znear, zfar); ;
+            cameraright.projectionMatrix = PerspectiveOffCenter((-zoom - correction) * (znear / 0.1f), (zoom - correction) * (znear / 0.1f), -zoom * (znear / 0.1f) * aspectRatio, zoom * (znear / 0.1f) * aspectRatio, znear, zfar); ;
+        }
 		}
 	
 	static Matrix4x4 PerspectiveOffCenter(float left, float right, float bottom, float top, float near, float far) {

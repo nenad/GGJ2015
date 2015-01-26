@@ -43,8 +43,10 @@ public class EventCoordinator : MonoBehaviour
         StartCoroutine(FadeOutIn());
         yield return new WaitForSeconds(1f);
         PossesedPeople();
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(9);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         ClearPossesedPeople();
 
         SetNormalAtmosphere();
@@ -54,8 +56,10 @@ public class EventCoordinator : MonoBehaviour
         StartCoroutine(FadeOutIn());
         yield return new WaitForSeconds(1f);
         RagdolPeople();
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(9);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         ClearRagdolPeople();
 
         SetNormalAtmosphere();
@@ -65,8 +69,10 @@ public class EventCoordinator : MonoBehaviour
         StartCoroutine(FadeOutIn());
         yield return new WaitForSeconds(1f);
         SetUpConductors();
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(14);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         ClearConductors();
 
         SetNormalAtmosphere();
@@ -78,8 +84,10 @@ public class EventCoordinator : MonoBehaviour
         SetUpZombies();
         trippy.seconds = 15;
         trippy.TrippyLights();
-        yield return new WaitForSeconds(21);
+        yield return new WaitForSeconds(20);
         yield return null;
+        StartCoroutine(FadeOutIn());
+        yield return new WaitForSeconds(1f);
         ClearZombies();
         SetNormalAtmosphere();
 
@@ -201,7 +209,7 @@ public class EventCoordinator : MonoBehaviour
 
     private void ShowBluescreen()
     {
-        AutoLevelState.switchTime = 3f;
+        AutoLevelState.switchTime = .5f;
         AutoLevelState.LevelName = "Massacre";
         Application.LoadLevel("BSOD");
     }
